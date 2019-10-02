@@ -125,11 +125,12 @@ footer.footer {
   padding-bottom: 4rem;
 }
 .nav-itens {
-  align-items: center
+  align-items: center;
 }
 .nav-item>a, .nav-item>a:hover{
   
   font: Medium Roboto;
+  font-weight: bold;
   letter-spacing: 0;
   color: #2D1F00;
   opacity: 1;
@@ -139,4 +140,11 @@ footer.footer {
 .btn-nav-buy {
   border-radius: 20px;
   color: #FFFFFF; 
+}
+.navbar-toggler, .navbar-toggler>icon {
+  border: 0;
+  color: #2D1F00;
+}
+.nav-item {
+  margin: 0 20px 0 20px
 }
