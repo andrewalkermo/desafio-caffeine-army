@@ -6,6 +6,7 @@
 
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #FFFFFF; 
 }
 
 h1,
@@ -21,7 +22,7 @@ h6 {
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("../img/bg-masthead.jpg") no-repeat center center;
+  background: url("../img/Topo.jpg") no-repeat center center;
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -29,12 +30,12 @@ header.masthead {
 
 header.masthead .overlay {
   position: absolute;
-  background-color: #212529;
+  background: #070707 0% 0% no-repeat padding-box;
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 header.masthead h1 {
@@ -128,7 +129,7 @@ footer.footer {
   align-items: center;
 }
 .nav-item>a, .nav-item>a:hover{
-  
+
   font: Medium Roboto;
   font-weight: bold;
   letter-spacing: 0;
@@ -139,7 +140,7 @@ footer.footer {
 }
 .btn-nav-buy {
   border-radius: 20px;
-  color: #FFFFFF; 
+  color: #FFFFFF;
 }
 .navbar-toggler, .navbar-toggler>icon {
   border: 0;
