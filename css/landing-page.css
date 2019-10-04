@@ -207,16 +207,46 @@ footer.footer {
   .video-mobile {
     display: block;
   }
+  .avaliation-img{
+    background: url("../img/Comentarios_Mobile.png") no-repeat center center;
+    height: -webkit-fill-available;
+
+  }
 }
 @media (min-width: 768px) {
   .video-mobile {
     display: none;
+  }
+  .showcase-img>div, .showcase-img, .showcase-text {
+    height: 500px;
+    max-height: 500px
+  }
+  .avaliation-img{
+    background: url("../img/Comentarios_Desktop.png") no-repeat center center;
+    height: -webkit-fill-available;
   }
 }
 
 .avaliation-section {
   margin-top: 30px
 }
-.avaliation-supercoffe-img {
-  background: url("../img/SuperCoffee.png") no-repeat center center;
+.avaliation-title, .offers-title {
+  font-family: Thin Roboto;
+  letter-spacing: 0;
+  color: #212121;
+  font-weight: 100;
+  font-size: 4em;
+}
+.avaliation-title>b , .offers-title>b{
+  font-weight: 700;
+
+}
+
+.avaliation-supercoffe-img>img {
+  height: auto;
+  width: 100%;
+
+}
+.offers-txt {
+  
 }
