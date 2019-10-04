@@ -4,9 +4,10 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
  */
 
-body {
+html, body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background-color: #FFFFFF; 
+  height: 100%;
 }
 
 h1,
@@ -22,7 +23,6 @@ h6 {
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("../img/Topo.jpg") no-repeat center center;
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -46,19 +46,27 @@ header.masthead h1 {
   header.masthead {
     padding-top: 12rem;
     padding-bottom: 12rem;
+    background: url("../img/Topo.jpg") no-repeat center center;
+    height: calc(100% - 47px);
   }
   header.masthead h1 {
     font-size: 3rem;
   }
 }
-
+@media (max-width: 767px) {
+  header.masthead {
+    background: url("../img/Topo_mobile.jpg") no-repeat center center;
+    height: calc(100% - 40px);
+  }}
 .showcase .showcase-text {
-  padding: 3rem;
+  padding: 3rem 0 3em 0;
+  background-color: #B78262;
 }
 
 .showcase .showcase-img {
   min-height: 30rem;
   background-size: cover;
+  background-color: #000000;
 }
 
 @media (min-width: 768px) {
@@ -130,7 +138,7 @@ footer.footer {
 }
 .nav-item>a, .nav-item>a:hover{
 
-  font: Medium Roboto;
+  font-family: Medium Roboto;
   font-weight: bold;
   letter-spacing: 0;
   color: #2D1F00;
@@ -138,14 +146,77 @@ footer.footer {
   padding: 0 10px 0 10px;
 
 }
-.btn-nav-buy {
-  border-radius: 20px;
-  color: #FFFFFF;
-}
+
 .navbar-toggler, .navbar-toggler>icon {
   border: 0;
   color: #2D1F00;
 }
 .nav-item {
   margin: 0 20px 0 20px
+}
+.btn-nav-buy {
+  border-radius: 20px;
+  color: #FFFFFF;
+}
+.grid-cards-img {
+  max-height: 300px;
+  width: auto;
+}
+.grid-cards-title {
+  text-align: center;
+  font-family: Regular 24px/24px Museo 500;
+  letter-spacing: 0;
+  color: #10151D;
+  opacity: 1;
+}
+.grid-cards-description {
+  text-align: center;
+  font-family: Light 15px/18px Roboto;
+  letter-spacing: 0;
+  color: #292929;
+  opacity: 1;
+}
+.row-grid-itens {
+  margin-right: 0;
+    margin-left: 0;
+}
+.grid-description {
+  text-align: center;
+  font-family: Light 17px/20px Roboto;
+  letter-spacing: 0;
+  color: #000000;
+}
+.grid-title {
+  text-align: center;
+  font-family: Light 52px/63px Roboto;
+  font-weight: normal; 
+  letter-spacing: 0;
+  color: #212121;
+}
+.btn-video-buy, .btn-video-buy:hover{
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  color: #B78262;
+  border-color: #FFFFFF;
+
+}
+.btn-video-buy, .btn-nav-buy {
+  width: 150px;
+}
+@media (max-width: 768px) {
+  .video-mobile {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .video-mobile {
+    display: none;
+  }
+}
+
+.avaliation-section {
+  margin-top: 30px
+}
+.avaliation-supercoffe-img {
+  background: url("../img/SuperCoffee.png") no-repeat center center;
 }
