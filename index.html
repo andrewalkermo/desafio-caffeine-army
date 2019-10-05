@@ -21,6 +21,8 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.css">
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom styles for this template -->
@@ -69,12 +71,16 @@
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
-        <div class="col-xl-9">
-          <h2>Dia dos Pais</h1>
-            <h1>Siga o conselho:</h1>
-            <h2>Busque a sua Melhor Versão</h1>
+        <div class="col-lg-12">
+          <h2 class="border-decored">Dia dos Pais</h2>
+          <h1>Siga o conselho:</h1>
+          <h2>Busque a sua Melhor Versão</h2>
         </div>
-        <div>
+
+        <div class="col-lg-6">
+          <a class="btn btn-sm btn-success nav-itens btn-nav-buy" href="#">Compre Agora</a>
+        </div>
+        <div class="col-lg-6 ">
           <a class="btn btn-sm btn-success nav-itens btn-nav-buy" href="#">Compre Agora</a>
         </div>
       </div>
@@ -147,9 +153,10 @@
   <section class="showcase avaliation-section">
     <div class="container-fluid p-0 text-center">
       <h1 class="avaliation-title">O que falam do <b>SuperCoffee</b></h1>
-      <br>
       <div class="row no-gutters">
-        <div class="col-lg-7 col-lg-7 order-lg-2 text-white avaliation-img">
+        <div class="col-lg-7 order-lg-2 text-white avaliation-img">
+          <img class="d-none d-lg-block" src="img/Comentarios_Desktop.png" alt="Avaliações Super Coffee">
+          <img class="d-sm-none" src="img/Comentarios_Mobile.png" alt="Avaliações Super Coffee">
         </div>
         <div class="col-lg-5 order-lg-1 my-auto avaliation-supercoffe-img">
           <img src="img/SuperCoffee.png" alt="Super Coffee">
@@ -159,130 +166,237 @@
   </section>
 
   <section class="showcase offers-section">
-    <div class="container-fluid p-0 text-center">
-      <div class="container oferts-txt">
+    <div class="container-fluid p-0 text-center text-white">
+      <div class="container offers-txt">
         <h1 class="offers-title"><b>Oferta Especial</b> Dia dos Pais</h1>
         <p>Nessa Dia dos Pais, não poderíamos deixar de fazer uma oferta especial para você presentear aquele que tanto
           fez e continua fazendo por você. O SuperCoffee é o estímulo que faltava para o seu pai levar uma vida mais
           saudável e ativa. Aproveite nossa ofertas e os benefícios que o SuperCoffee proporciona em dupla.</p>
         <br>
       </div>
-      <div class="row no-gutters">
-        <div class="col-lg-7 col-lg-7 order-lg-2 text-white avaliation-img">
+      <div class="container text-center ">
+        <div class="d-none d-lg-block">
+          <div class="row ">
+            <div class="col-lg-4">
+              <div class="card">
+                <div class="card-header">
+                  para seu <b>pai</b>
+                </div>
+                <img class="card-img-top" src="img/Oferta01.png" alt="Card image cap">
+                <div class="card-body">
+                  <div><span class="card-valor-antigo">R$ 96,70</span></div>
+                  <div><span class="card-real">R$</span><span class="card-valor">87,00</span></div>
+                  <div class="rectangle">Economize <span class="desconto-porcento">5%</span></div>
+                  <a href="#" class=" card-comprar btn btn-success">COMPRAR AGORA</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card">
+                <div class="card-header">
+                  para <b>você</b> e seu <b>pai</b>
+                  <div class="vencedor">VENCEDOR</div>
+
+                </div>
+                <img class="card-img-top" src="img/Oferta 02.png" alt="Card image cap">
+                <div class="card-body">
+                  <div><span class="card-valor-antigo">R$ 96,70</span></div>
+                  <div><span class="card-real">R$</span><span class="card-valor">87</span>
+                    <div class="decimal">,00</div>
+                    <div class="valor-cada">/cada</div>
+                  </div>
+
+                  <div class="rectangle">Economize <span class="desconto-porcento">10%</span></div>
+                  <a href="#" class=" card-comprar btn btn-success">COMPRAR AGORA</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card">
+                <div class="card-header">
+                  para a <b>familia</b>
+                </div>
+                <img class="card-img-top" src="img/Oferta 03.png" alt="Card image cap">
+                <div class="card-body">
+                  <div><span class="card-valor-antigo">R$ 96,70</span></div>
+                  <div><span class="card-real">R$</span><span class="card-valor">79</span>
+                    <div class="decimal">,90</div>
+                    <div class="valor-cada">/cada</div>
+                  </div>
+                  <div class="rectangle">Economize <span class="desconto-porcento">17%</span></div>
+                  <a href="#" class=" card-comprar btn btn-success">COMPRAR AGORA</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-5 order-lg-1 my-auto avaliation-supercoffe-img">
-          <img src="img/SuperCoffee.png" alt="Super Coffee">
+
+        <div class="owl-carousel owl-theme d-block d-sm-none">
+          <div class="item">
+            <div class="card">
+              <div class="card-header">
+                para seu <b>pai</b>
+              </div>
+              <img class="card-img-top" src="img/Oferta01.png" alt="Card image cap">
+              <div class="card-body">
+                <div><span class="card-valor-antigo">R$ 96,70</span></div>
+                <div><span class="card-real">R$</span><span class="card-valor">87,00</span></div>
+                <div class="rectangle">Economize <span class="desconto-porcento">5%</span></div>
+                <a href="#" class=" card-comprar btn btn-success">COMPRAR AGORA</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <div class="card-header">
+                para <b>você</b> e seu <b>pai</b>
+                <div class="vencedor">VENCEDOR</div>
+
+              </div>
+              <img class="card-img-top" src="img/Oferta 02.png" alt="Card image cap">
+              <div class="card-body">
+                <div><span class="card-valor-antigo">R$ 96,70</span></div>
+                <div><span class="card-real">R$</span><span class="card-valor">87</span>
+                  <div class="decimal">,00</div>
+                  <div class="valor-cada">/cada</div>
+                </div>
+
+                <div class="rectangle">Economize <span class="desconto-porcento">10%</span></div>
+                <a href="#" class=" card-comprar btn btn-success">COMPRAR AGORA</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <div class="card-header">
+                para a <b>familia</b>
+              </div>
+              <img class="card-img-top" src="img/Oferta 03.png" alt="Card image cap">
+              <div class="card-body">
+                <div><span class="card-valor-antigo">R$ 96,70</span></div>
+                <div><span class="card-real">R$</span><span class="card-valor">79</span>
+                  <div class="decimal">,90</div>
+                  <div class="valor-cada">/cada</div>
+                </div>
+                <div class="rectangle">Economize <span class="desconto-porcento">17%</span></div>
+                <a href="#" class=" card-comprar btn btn-success">COMPRAR AGORA</a>
+
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Testimonials -->
-  <section class="testimonials text-center bg-light">
+  <section class="testimonials ingredientes text-center position-relative text-white">
+    <div class="end-offers">
+    </div>
     <div class="container">
-      <h2 class="mb-5">What people are saying...</h2>
+      <div class="ingredientes-txt">
+        <p>Criado com</p>
+        <h1>Ingredientes <b>100% Naturais</b></h1>
+      </div>
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-3 col-6">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg" alt="">
-            <h5>Margaret E.</h5>
-            <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
+            <img class="img-fluid rounded-circle mb-3" src="img/Ingredientes/Cafeina@0,1x.jpg" alt="">
+            <h5 class="ingrediente-description">Café</h5>
           </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3 col-6">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg" alt="">
-            <h5>Fred S.</h5>
-            <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice
-              landing pages."</p>
+            <img class="img-fluid rounded-circle mb-3" src="img/Ingredientes/TCM@0,1x.jpg" alt="">
+            <h5 class="ingrediente-description">TCM</h5>
+
           </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3 col-6">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg" alt="">
-            <h5>Sarah W.</h5>
-            <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+            <img class="img-fluid rounded-circle mb-3" src="img/Ingredientes/ChaVerde@0,1x.jpg" alt="">
+            <h5 class="ingrediente-description">Chá Verde</h5>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/Ingredientes/Gengibre@0,1x.jpg" alt="">
+            <h5 class="ingrediente-description">Gengibre</h5>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-6">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/Ingredientes/Pimenta@0,1x.jpg" alt="">
+            <h5 class="ingrediente-description">Pimenta Preta</h5>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/Ingredientes/Canela@0,1x.jpg" alt="">
+            <h5 class="ingrediente-description">Canela</h5>
+
+          </div>
+        </div>
+        <div class="col-lg-3 col-6">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/Ingredientes/Colageno@0,1x.jpg" alt="">
+            <h5 class="ingrediente-description">Peptídeos de Colágeno</h5>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/Ingredientes/Taurina@0,1x.jpg" alt="">
+            <h5 class="ingrediente-description">Taurina</h5>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Call to Action -->
-  <section class="call-to-action text-white text-center">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-9 mx-auto">
-          <h2 class="mb-4">Ready to get started? Sign up now!</h2>
-        </div>
-        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-          <form>
-            <div class="form-row">
-              <div class="col-12 col-md-9 mb-2 mb-md-0">
-                <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
-              </div>
-              <div class="col-12 col-md-3">
-                <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
+  <section class="tabela-section">
+    <div class="tabela-back text-center">
+      <img class="d-none d-lg-block mx-auto" src="img/TabelaNutricional.jpg" alt="Tabela Nutricional Super Coffee">
+      <img class="d-sm-none" src="img/Tabela_Mobile.jpg" alt="Tabela Nutricional Super Coffee">
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
-          <ul class="list-inline mb-2">
-            <li class="list-inline-item">
-              <a href="#">About</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#">Contact</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#">Terms of Use</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#">Privacy Policy</a>
-            </li>
-          </ul>
-          <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2019. All Rights Reserved.</p>
-        </div>
-        <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
-          <ul class="list-inline mb-0">
-            <li class="list-inline-item mr-3">
-              <a href="#">
-                <i class="fab fa-facebook fa-2x fa-fw"></i>
-              </a>
-            </li>
-            <li class="list-inline-item mr-3">
-              <a href="#">
-                <i class="fab fa-twitter-square fa-2x fa-fw"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <i class="fab fa-instagram fa-2x fa-fw"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+  <script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel({
+        center: true,
+        items: 2,
+        loop: true,
+        margin: 10,
+        autoWidth: true,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: true
+          },
+          600: {
+            items: 3,
+            nav: false
+          },
+          1000: {
+            items: 5,
+            nav: true,
+            loop: false
+          }
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>

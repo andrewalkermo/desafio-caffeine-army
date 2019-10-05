@@ -97,8 +97,10 @@ header.masthead h1 {
 }
 
 .testimonials {
-  padding-top: 7rem;
   padding-bottom: 7rem;
+  background-color: #10141D;
+  border-bottom-left-radius: 550px 100px;
+  border-bottom-right-radius: 550px 100px;
 }
 
 .testimonials .testimonial-item {
@@ -106,8 +108,7 @@ header.masthead h1 {
 }
 
 .testimonials .testimonial-item img {
-  max-width: 12rem;
-  box-shadow: 0px 5px 5px 0px #adb5bd;
+  max-width: 15rem;
 }
 
 .call-to-action {
@@ -138,7 +139,7 @@ footer.footer {
 }
 .nav-item>a, .nav-item>a:hover{
 
-  font-family: Medium Roboto;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   letter-spacing: 0;
   color: #2D1F00;
@@ -158,6 +159,9 @@ footer.footer {
   border-radius: 20px;
   color: #FFFFFF;
 }
+
+
+
 .grid-cards-img {
   max-height: 300px;
   width: auto;
@@ -171,7 +175,7 @@ footer.footer {
 }
 .grid-cards-description {
   text-align: center;
-  font-family: Light 15px/18px Roboto;
+  font-family: Light 15px/18px "Roboto", sans-serif;
   letter-spacing: 0;
   color: #292929;
   opacity: 1;
@@ -182,13 +186,13 @@ footer.footer {
 }
 .grid-description {
   text-align: center;
-  font-family: Light 17px/20px Roboto;
+  font-family: Light 17px/20px "Roboto", sans-serif;
   letter-spacing: 0;
   color: #000000;
 }
 .grid-title {
   text-align: center;
-  font-family: Light 52px/63px Roboto;
+  font-family: Light 52px/63px "Roboto", sans-serif;
   font-weight: normal; 
   letter-spacing: 0;
   color: #212121;
@@ -207,10 +211,14 @@ footer.footer {
   .video-mobile {
     display: block;
   }
-  .avaliation-img{
-    background: url("../img/Comentarios_Mobile.png") no-repeat center center;
-    height: -webkit-fill-available;
-
+  .offers-section {
+    margin-top: -60px;
+  }
+  .offers-title {
+    font-size: 3em;
+  }
+  .testimonials .testimonial-item img {
+    max-width: 10rem;
   }
 }
 @media (min-width: 768px) {
@@ -221,32 +229,224 @@ footer.footer {
     height: 500px;
     max-height: 500px
   }
-  .avaliation-img{
-    background: url("../img/Comentarios_Desktop.png") no-repeat center center;
-    height: -webkit-fill-available;
+  .avaliation-supercoffe-img>img {
+    padding-top: 100px;
+  }
+  .offers-section {
+    padding-bottom: 100px;
+  }
+  .offers-title {
+    font-size: 4em;
   }
 }
 
 .avaliation-section {
   margin-top: 30px
 }
-.avaliation-title, .offers-title {
-  font-family: Thin Roboto;
+.avaliation-title {
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0;
   color: #212121;
   font-weight: 100;
   font-size: 4em;
 }
+.offers-title {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0;
+  font-weight: 100;
+}
 .avaliation-title>b , .offers-title>b{
-  font-weight: 700;
-
+  font-weight: 400;
 }
 
 .avaliation-supercoffe-img>img {
   height: auto;
   width: 100%;
-
+}
+.offers-section {
+  background-color: #B78262;
+  border-top-left-radius: 550px 100px;
+  border-top-right-radius: 550px 100px;
 }
 .offers-txt {
-  
+  padding-top: 100px;
+}
+
+.end-offers {
+  background-color: #B78262;
+  border-bottom-left-radius: 550px 100px;
+  border-bottom-right-radius: 550px 100px;
+  height: 100px;
+  margin-bottom: 7em;
+}
+.ingredientes-txt>p {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  letter-spacing: 0;
+  opacity: 1;
+}
+.ingredientes-txt>h1 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 4em;
+  letter-spacing: 0;
+  opacity: 1;
+  margin-top: -25px;
+}
+.ingredientes-txt>h1>b {
+  font-weight: 600;
+}
+.ingrediente-description {
+  text-align: center;
+font-family: "Roboto", sans-serif;
+font-weight: 100;
+color: #C4B88D;
+opacity: 1;
+}
+.tabela-back {
+  padding-top: 50px;
+}
+
+.border-decored {
+  overflow: hidden;
+  text-align: center;
+}
+.border-decored:before,
+.border-decored:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+.border-decored:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+h1:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+.offer-cards {
+  background-color: #FFFFFF;
+  height: 500px;
+  width: 200px;
+  max-width: 90%;
+  max-height: 100%;
+}
+
+.card {
+  color: #000;
+  border-radius: 10px;
+}
+.card-header {
+  padding-top: 13px;
+    padding-bottom: 13px;
+    background-color: #E6E6E6;
+    color: #000;
+    font-size: 22px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom: 0;
+}
+.card-body {
+  margin-top: -50px;
+}
+.card-valor, .card-valor-antigo, .card-real, .card-comprar .valor-cada, .decimal{
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0;
+  opacity: 1;
+
+}
+.card-valor {
+
+  font-weight: 700;
+  font-size: 4rem;
+  color: #000000;
+}
+.card-real {
+  font-weight: 400;
+  font-size: 1em;
+  color: #000000;
+}
+
+.card-valor-antigo {
+  font-weight: 400;
+  font-size: 1em;
+  color: #963030;
+  text-decoration-line: line-through; 
+}
+.card-comprar {
+  width: 90%;
+  font-weight: 400;
+  font-size: 30px;
+  color: #FFFFFF;
+  font-size: 22px;
+  border-radius: 8px;
+  box-shadow: 3pt 3pt #035041;
+}
+
+.rectangle {
+  position: relative;
+  background-color: #F36C78;
+  height: 28px;
+  width: 148px;
+  z-index: 1;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  display: inline-table;
+  font-size: 17px;
+  color: #FFF;
+  padding-top: 3px;
+  font-weight: 300 !important;
+}
+.rectangle:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -50px;
+  width: 0;
+  height: 0;
+  border-top: solid 10px #F36C78;
+  border-left: solid 50px transparent;
+  border-right: solid 50px transparent;
+}
+
+.desconto-porcento {
+  font-weight: 700 !important;
+}
+.vencedor {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: 148px;
+    font-size: 14px;
+    background-image: linear-gradient(#F2D69B, #D0A26D);
+    border-radius: 6px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: -15px;
+    letter-spacing: 2px;
+    font-weight: 700 !important;
+}
+.decimal {
+  font-size: 20px;
+  display: inline-block;
+  position: relative;
+  top: -30px;
+}
+.valor-cada {
+  font-size: 20px;
+  display: inline-block;
+  position: absolute;
+  right: 100px;
+  font-weight: 100 !important;
+  bottom: 115px;
 }
