@@ -24,7 +24,6 @@ header.masthead {
   position: relative;
   background-color: #343a40;
   background-size: cover;
-  padding-top: 8rem;
   padding-bottom: 8rem;
 }
 
@@ -248,9 +247,9 @@ footer.footer {
   letter-spacing: 0;
   color: #212121;
   font-weight: 100;
-  font-size: 4em;
+  font-size: 3rem;
 }
-.offers-title {
+.offers-title, .header-line1{
   font-family: "Roboto", sans-serif;
   letter-spacing: 0;
   font-weight: 100;
@@ -343,6 +342,7 @@ h1:after {
 .card {
   color: #000;
   border-radius: 10px;
+  margin-top: 20px
 }
 .card-header {
   padding-top: 13px;
@@ -449,4 +449,123 @@ h1:after {
   right: 100px;
   font-weight: 100 !important;
   bottom: 115px;
+}
+.owl-item {
+  padding: 20px 0;
+  width: 100px;
+}
+
+.header-line2 {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0;
+  font-weight: 400;
+  font-size: 4em;
+}
+.header-line3 {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0;
+  font-weight: 100;
+  font-size: 5em;
+}
+
+@media (max-width: 768px) {
+  .masthead {
+    padding-top: 2em;
+  }
+  .header-line1 {
+    font-size: 2em;
+  }
+  .header-line2 {
+    font-size: 3em;
+  }
+  .header-line3 {
+    font-size: 3em;
+  }
+  .header-links {
+    margin-top: 200px;
+  }
+}
+@media (min-width: 768px) {
+  .masthead {
+  padding-top: 7rem;
+
+  }
+  .header-line1 {
+    font-size: 2em;
+  }
+  .header-line2 {
+    font-size: 3em;
+  }
+  .header-line3 {
+    font-size: 4em;
+  }
+}
+
+
+.frete-gratis {
+  width: 124px;
+  margin-left: -30px;
+  margin-right: -10px;
+  background: #308D50;
+  top: 80px;
+  position: absolute;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  color: #FFF;
+  font-size: 20px;
+  line-height: 20px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  font-weight: 700;
+}
+.frete-gratis:before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-color: transparent;
+  bottom: -10px;
+  border-width: 0 10px 10px 0;
+  border-right-color: #164125;
+  left: 0;
+}
+
+#binding-screen {
+  background: url("../img/Fundo.jpg"); 
+  
+
+}
+.modal-content {
+  border:  0;
+  border-radius: 10px; 
+}
+
+.modal-texts {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0;
+  opacity: 1;
+}
+.modal-subtitulo {
+  font-weight: 400;
+  font-size: 15px;
+}
+.modal-titulo {
+  font-weight: 700;
+  font-size: 2em;
+}
+.modal-validade {
+  font-weight: 100;
+  font-size: 15px;
+}
+.green {
+  color: #00B359;
+}
+.form-control {
+  margin: 5px 0;
+}
+button.btn-secondary {
+  background: #EEEEEE;
+  color: #000;
+  border: 0;
 }

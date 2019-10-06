@@ -10,8 +10,6 @@
 
   <title>Caffeine Army</title>
 
-
-  <!-- Custom fonts for this template -->
   <link rel="icon" type="image/png" href="img/caffeine_army_favicon.png">
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
   <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
@@ -21,18 +19,13 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.css">
-  <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom styles for this template -->
   <link href="css/landing-page.css" rel="stylesheet">
 
 </head>
 
 <body>
 
-  <!-- Navigation -->
   <nav class="navbar navbar-expand-md navbar-light static-top">
     <div class="container" style="max-width: 100%;">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
@@ -43,21 +36,21 @@
       <div id="collapsibleNavbar" class="navbar-collapse collapse">
         <ul class="navbar-nav my-auto nav-itens ml-auto">
           <li class="nav-item">
-            <a class="" href="#">ENTENDA</a>
+            <a id="scroll-entenda" href="#">ENTENDA</a>
           </li>
           <li class="nav-item">
-            <a class="" href="#">ASSISTA AO VIDEO</a>
+            <a id="scroll-video" href="#">ASSISTA AO VIDEO</a>
           </li>
           <li class="nav-item">
-            <a class="" href="#">O QUE FALAM</a>
+            <a id="scroll-comentarios" href="#">O QUE FALAM</a>
           </li>
           <li class="nav-item">
-            <a class="" href="#">OFERTAS</a>
+            <a id="scroll-ofertas" href="#">OFERTAS</a>
           </li>
           <li class="nav-item">
-            <a class="" href="#">INGREDIENTES</a>
+            <a id="scroll-ingredientes" href="#">INGREDIENTES</a>
           </li>
-          <li class="">
+          <li>
             <a class="btn btn-sm btn-success nav-itens btn-nav-buy" href="#">Compre Agora</a>
           </li>
         </ul>
@@ -66,27 +59,23 @@
     </div>
   </nav>
 
-  <!-- Masthead -->
   <header class="masthead text-white text-center">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <h2 class="border-decored">Dia dos Pais</h2>
-          <h1>Siga o conselho:</h1>
-          <h2>Busque a sua Melhor Versão</h2>
+          <h2 class="header-line1">Dia dos Pais</h2>
+          <h2 class="header-line2">Siga o conselho:</h2>
+          <h2 class="header-line3">Busque a sua Melhor Versão</h2>
         </div>
-
-        <div class="col-lg-6">
+        <div class="header-links col-lg-12">
           <a class="btn btn-sm btn-success nav-itens btn-nav-buy" href="#">Compre Agora</a>
-        </div>
-        <div class="col-lg-6 ">
-          <a class="btn btn-sm btn-success nav-itens btn-nav-buy" href="#">Compre Agora</a>
+          <a class="btn btn-link nav-itens btn-nav-buy" href="#">Assista ao vídeo</a>
         </div>
       </div>
-    </div>
   </header>
-  <section class="features-icons text-center">
+
+  <section class="features-icons text-center entenda">
     <div class="container">
       <h1 class="grid-title"><b>Presenteie</b> seu Pai</h1>
       <p class="grid-description">A verdade é que todo pai é um guia, que quer sempre o melhor de nós. Todo mundo tem
@@ -122,7 +111,7 @@
     </div>
   </section>
 
-  <section class="showcase">
+  <section class="showcase video">
     <div class="container-fluid p-0">
       <div class="row no-gutters">
         <div class="col-lg-7 order-lg-2 d-none d-lg-block  text-white showcase-img">
@@ -174,10 +163,10 @@
           saudável e ativa. Aproveite nossa ofertas e os benefícios que o SuperCoffee proporciona em dupla.</p>
         <br>
       </div>
-      <div class="container text-center ">
-        <div class="d-none d-lg-block">
+      <div class="container text-center">
+        <div class="">
           <div class="row ">
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-12">
               <div class="card">
                 <div class="card-header">
                   para seu <b>pai</b>
@@ -192,7 +181,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-12">
               <div class="card">
                 <div class="card-header">
                   para <b>você</b> e seu <b>pai</b>
@@ -209,11 +198,14 @@
 
                   <div class="rectangle">Economize <span class="desconto-porcento">10%</span></div>
                   <a href="#" class=" card-comprar btn btn-success">COMPRAR AGORA</a>
-
+                  <div class="frete-gratis">
+                    <div><i>FRETE</i></div>
+                    <div><i>GRÁTIS</i></div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-12">
               <div class="card">
                 <div class="card-header">
                   para a <b>familia</b>
@@ -227,74 +219,20 @@
                   </div>
                   <div class="rectangle">Economize <span class="desconto-porcento">17%</span></div>
                   <a href="#" class=" card-comprar btn btn-success">COMPRAR AGORA</a>
-
+                  <div class="frete-gratis">
+                    <div><i>FRETE</i></div>
+                    <div><i>GRÁTIS</i></div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="owl-carousel owl-theme d-block d-sm-none">
-          <div class="item">
-            <div class="card">
-              <div class="card-header">
-                para seu <b>pai</b>
-              </div>
-              <img class="card-img-top" src="img/Oferta01.png" alt="Card image cap">
-              <div class="card-body">
-                <div><span class="card-valor-antigo">R$ 96,70</span></div>
-                <div><span class="card-real">R$</span><span class="card-valor">87,00</span></div>
-                <div class="rectangle">Economize <span class="desconto-porcento">5%</span></div>
-                <a href="#" class=" card-comprar btn btn-success">COMPRAR AGORA</a>
-
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="card">
-              <div class="card-header">
-                para <b>você</b> e seu <b>pai</b>
-                <div class="vencedor">VENCEDOR</div>
-
-              </div>
-              <img class="card-img-top" src="img/Oferta 02.png" alt="Card image cap">
-              <div class="card-body">
-                <div><span class="card-valor-antigo">R$ 96,70</span></div>
-                <div><span class="card-real">R$</span><span class="card-valor">87</span>
-                  <div class="decimal">,00</div>
-                  <div class="valor-cada">/cada</div>
-                </div>
-
-                <div class="rectangle">Economize <span class="desconto-porcento">10%</span></div>
-                <a href="#" class=" card-comprar btn btn-success">COMPRAR AGORA</a>
-
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="card">
-              <div class="card-header">
-                para a <b>familia</b>
-              </div>
-              <img class="card-img-top" src="img/Oferta 03.png" alt="Card image cap">
-              <div class="card-body">
-                <div><span class="card-valor-antigo">R$ 96,70</span></div>
-                <div><span class="card-real">R$</span><span class="card-valor">79</span>
-                  <div class="decimal">,90</div>
-                  <div class="valor-cada">/cada</div>
-                </div>
-                <div class="rectangle">Economize <span class="desconto-porcento">17%</span></div>
-                <a href="#" class=" card-comprar btn btn-success">COMPRAR AGORA</a>
-
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    </div>
   </section>
 
-  <!-- Testimonials -->
   <section class="testimonials ingredientes text-center position-relative text-white">
     <div class="end-offers">
     </div>
@@ -366,37 +304,89 @@
       <img class="d-sm-none" src="img/Tabela_Mobile.jpg" alt="Tabela Nutricional Super Coffee">
     </div>
   </section>
-
+  <div id="binding-screen" class="modal fade" tabindex="-1"  data-keyboard="false"
+    data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class=" modal-texts text-center">
+            <p class="modal-subtitulo">Não saia ainda</p>
+            <h1 class="modal-titulo">Ganhe <span class="green">10% de desconto</span> na sua primeira compra</h1>
+            <p class="modal-validade">Válido Hoje: <spam>XX de Setembro</spam>
+            </p>
+            <div class=" container row form-group">
+              <input type="email" class="form-control" placeholder="Seu melhor e-mail...">
+              <button type="button" class="btn btn-success form-control" data-dismiss="modal">RETIRAR MEUS 10%
+                OFF</button>
+              <button type="button" class="btn btn-secondary form-control" data-dismiss="modal">Não, obrigado</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+
   <script>
     $(document).ready(function () {
-      $(".owl-carousel").owlCarousel({
-        center: true,
-        items: 2,
-        loop: true,
-        margin: 10,
-        autoWidth: true,
-        responsiveClass: true,
-        responsive: {
-          0: {
-            items: 1,
-            nav: true
-          },
-          600: {
-            items: 3,
-            nav: false
-          },
-          1000: {
-            items: 5,
-            nav: true,
-            loop: false
-          }
+      $('#scroll-entenda').click(function () {
+        $('html, body').animate({
+          scrollTop: $("section.entenda").offset().top
+        }, 500)
+      }),
+        $('#scroll-video').click(function () {
+          $('html, body').animate({
+            scrollTop: $("section.video").offset().top
+          }, 500)
+        }),
+        $('#scroll-comentarios').click(function () {
+          $('html, body').animate({
+            scrollTop: $("section.avaliation-section").offset().top
+          }, 500)
+        }),
+        $('#scroll-ofertas').click(function () {
+          $('html, body').animate({
+            scrollTop: $("section.offers-section").offset().top + 100
+          }, 500)
+        }),
+        $('#scroll-ingredientes').click(function () {
+          $('html, body').animate({
+            scrollTop: $("section.ingredientes").offset().top + 200
+          }, 500)
+        })
+      var monthNames = [
+        'Janeiro',
+        'Fevereiro',
+        'Março',
+        'Abril',
+        'Maio',
+        'Junho',
+        'Julho',
+        'Agosto',
+        'Setembro',
+        'Outubro',
+        'Novembro',
+        'Dezembro'
+      ];
+      var date = new Date();
+      var day = date.getDate();
+      var monthIndex = date.getMonth();
+      $(".modal-validade>spam").text(day + ' de ' + monthNames[monthIndex]);
+      
+      var binded = false;
+      function showBindModal(){
+        if (!binded) {
+          $('#binding-screen').modal('show');
+          binded = true;
         }
+      }
+      setTimeout(showBindModal, 5000);
+      $('body').mouseleave(function(){
+        showBindModal();
       });
     });
   </script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
